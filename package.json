@@ -1,0 +1,42 @@
+{
+  "name": "aimer-nightmare",
+  "version": "0.0.0",
+  "description": "Aimer for single page application.",
+  "license": "MIT",
+  "repository": "egoist/aimer-nightmare",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "aimer",
+    "spider"
+  ],
+  "devDependencies": {
+    "ava": "latest",
+    "xo": "latest"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2,
+    "globals": [
+      "document"
+    ]
+  },
+  "dependencies": {
+    "aimer": "^1.1.0",
+    "cheerio": "^0.20.0",
+    "nightmare": "^2.5.3"
+  }
+}
