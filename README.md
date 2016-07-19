@@ -11,7 +11,7 @@ $ npm install --save aimer-nightmare
 ## Usage
 
 ```js
-const nightmare = require('aimer/nightmare')
+const nightmare = require('aimer-nightmare')
 
 nightmare('http://some-url.com/#!/list')
   .then($ => {
