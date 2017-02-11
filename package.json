@@ -1,9 +1,9 @@
 {
-  "name": "aimer-nightmare",
+  "name": "recrawler-spa",
   "version": "1.0.0",
   "description": "Aimer for single page application.",
   "license": "MIT",
-  "repository": "egoist/aimer-nightmare",
+  "repository": "egoist/recrawler-spa",
   "author": {
     "name": "EGOIST",
     "email": "0x142857@gmail.com",
@@ -35,8 +35,8 @@
     ]
   },
   "dependencies": {
-    "aimer": "^1.1.0",
     "cheerio": "^0.20.0",
-    "nightmare": "^2.5.3"
+    "nightmare": "^2.5.3",
+    "recrawler": "^2.0.0"
   }
 }

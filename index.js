@@ -1,7 +1,7 @@
 'use strict'
 const Nightmare = require('nightmare')
 const cheerio = require('cheerio')
-const aimer = require('aimer')
+const recrawler = require('recrawler')
 
 module.exports = function (url, opts) {
   opts = opts || {}
@@ -11,13 +11,13 @@ module.exports = function (url, opts) {
     decodeEntities: false
   }, opts.cheerio)
 
-  const next = function next() {
-    const nightmare = Nightmare(opts.nightmare) // eslint-disable-line babel/new-cap
+  const next = () => {
+    const nightmare = Nightmare(opts.nightmare) // eslint-disable-line new-cap
     return nightmare.goto(url)
       .evaluate(() => document.documentElement.outerHTML)
       .end()
       .then(res => cheerio.load(res, cheerioOpts))
   }
 
-  return aimer(url, {htmlOnly: true}).then(next)
+  return recrawler(url, {htmlOnly: true}).then(next)
 }

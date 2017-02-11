@@ -1,17 +1,17 @@
-# aimer-nightmare [![NPM version](https://img.shields.io/npm/v/aimer-nightmare.svg)](https://npmjs.com/package/aimer-nightmare) [![NPM downloads](https://img.shields.io/npm/dm/aimer-nightmare.svg)](https://npmjs.com/package/aimer-nightmare) [![Build Status](https://img.shields.io/circleci/project/egoist/aimer-nightmare/master.svg)](https://circleci.com/gh/egoist/aimer-nightmare)
+# recrawler-spa [![NPM version](https://img.shields.io/npm/v/recrawler-spa.svg)](https://npmjs.com/package/recrawler-spa) [![NPM downloads](https://img.shields.io/npm/dm/recrawler-spa.svg)](https://npmjs.com/package/recrawler-spa) [![Build Status](https://img.shields.io/circleci/project/egoist/recrawler-spa/master.svg)](https://circleci.com/gh/egoist/recrawler-spa)
 
-> [Aimer](https://github.com/egoist/aimer) for single page application.
+> [recrawler](https://github.com/egoist/recrawler) but for single page application.
 
 ## Install
 
 ```bash
-$ npm install --save aimer-nightmare
+$ npm install --save recrawler-spa
 ```
 
 ## Usage
 
 ```js
-const nightmare = require('aimer-nightmare')
+const nightmare = require('recrawler-spa')
 
 nightmare('http://some-url.com/#!/list')
   .then($ => {

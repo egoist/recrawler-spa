@@ -1,7 +1,7 @@
 import test from 'ava'
-import nightmare from './'
+import fetch from './'
 
 test('main', async t => {
-  const $ = await nightmare('http://output.jsbin.com/hawano')
+  const $ = await fetch('http://output.jsbin.com/hawano')
   t.is($('#title').text(), 'hello')
 })
