@@ -22,7 +22,7 @@ recrawler('http://some-url.com/#!/list')
 
 ## API
 
-### nightmare(url, opts)
+### recrawler(url, opts)
 
 Use [nightmare](https://github.com/segmentio/nightmare) to retrieve html from url, this is good for handling SPA website.
 
