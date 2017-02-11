@@ -11,9 +11,9 @@ $ npm install --save recrawler-spa
 ## Usage
 
 ```js
-const nightmare = require('recrawler-spa')
+const recrawler = require('recrawler-spa')
 
-nightmare('http://some-url.com/#!/list')
+recrawler('http://some-url.com/#!/list')
   .then($ => {
     // your code goes here
     const src = $('img').attr('src')
